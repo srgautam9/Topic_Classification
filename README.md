@@ -1,8 +1,6 @@
 # Topic Classification
 
-Text -> topic classifier built entirely from scratch (no pretrained models,
-no finetuning), under the 5B parameter constraint, designed to scale to a
-10M-row / 4GB parquet dataset without loading it fully into memory.
+Topic classifier that predicts TOPIC given the DATA, built entirely from scratch (no pretrained models, no finetuning), under the 5B parameter constraint, designed to scale to a 10M-row / 4GB parquet dataset without loading it fully into memory.
 
 ## Repository structure
 
