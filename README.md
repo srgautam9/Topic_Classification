@@ -22,7 +22,7 @@ project/
 │   └── notes.md         # working experiment log (configs/observations)
 ├── eval_results/         # evaluation artifacts land here (metrics, confusion matrices, etc.)
 ├── final_models/        # trained checkpoints land here (.pt / .joblib)
-├── report.pdf            # written after results are in (not yet included)
+├── report.pdf           
 ├── requirements.txt
 └── README.md
 ```
