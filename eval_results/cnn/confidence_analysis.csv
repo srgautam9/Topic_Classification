@@ -1,0 +1,3 @@
+group,n,mean_confidence,median_confidence
+correct,432640,0.9344,0.9970
+incorrect,67360,0.5955,0.5760

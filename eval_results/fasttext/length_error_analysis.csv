@@ -1,0 +1,5 @@
+length_bucket,n_total,n_correct,error_rate
+1-5 words,0,0,n/a
+6-15 words,111,108,0.0270
+16-30 words,507,496,0.0217
+31+ words,36449,36069,0.0104

@@ -1,0 +1,6 @@
+label,precision,recall,f1,support
+politics,0.9310,0.9949,0.9619,24929
+health,0.9879,0.8485,0.9129,12138
+business,0.0000,0.0000,0.0000,0
+sports,0.0000,0.0000,0.0000,0
+technology,0.0000,0.0000,0.0000,0

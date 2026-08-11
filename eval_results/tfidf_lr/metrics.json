@@ -1,0 +1,42 @@
+{
+  "n_evaluated": 37067,
+  "accuracy": 0.9469878867995791,
+  "precision_macro": 0.3837774639383156,
+  "recall_macro": 0.36868759674906293,
+  "f1_macro": 0.3749615414999629,
+  "precision_weighted": 0.9496192907865258,
+  "recall_weighted": 0.9469878867995791,
+  "f1_weighted": 0.9458559612194573,
+  "per_class": {
+    "business": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 0
+    },
+    "health": {
+      "precision": 0.9879136690647482,
+      "recall": 0.8484923381117153,
+      "f1": 0.912910517218455,
+      "support": 12138
+    },
+    "politics": {
+      "precision": 0.9309736506268298,
+      "recall": 0.9949456456335994,
+      "f1": 0.9618971902813597,
+      "support": 24929
+    },
+    "sports": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 0
+    },
+    "technology": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 0
+    }
+  }
+}
