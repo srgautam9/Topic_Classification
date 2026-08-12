@@ -70,21 +70,18 @@ python -m src.train --approach fasttext --data synthetic_dataset.parquet --epoch
 
 ```bash
 # Classical baseline (fast, good sanity check on class separability)
-python -m src.train --approach tfidf_lr --data /path/to/dataset_10.parquet
+python -m src.train --approach tfidf_lr --data data/dataset_10.parquet --label-cache experiments/label2id.json
 
 # FastText-style (recommended first deep-learning run: cheapest, streams well)
-python -m src.train --approach fasttext --data /path/to/dataset_10.parquet \
-    --epochs 3 --batch-size 512 --num-buckets 2000000 --embed-dim 100
+python -m src.train --approach fasttext --data data/dataset_10.parquet --label-cache experiments/label2id.json
 
 # TextCNN
-python -m src.train --approach cnn --data /path/to/dataset_10.parquet \
-    --epochs 3 --batch-size 256 --num-buckets 2000000 --embed-dim 128 --max-len 128
+python -m src.train --approach cnn --data /path/to/dataset_10.parquet --epochs 3 --batch-size 256 --num-buckets 2000000 --embed-dim 128 --max-len 128
 
 # BiLSTM
-python -m src.train --approach bilstm --data /path/to/dataset_10.parquet \
-    --epochs 3 --batch-size 256 --num-buckets 2000000 --embed-dim 128 --hidden-dim 128
-```
+python -m src.train --approach bilstm --data /path/to/dataset_10.parquet --epochs 3 --batch-size 256 --num-buckets 2000000 --embed-dim 128 --hidden-dim 128
 
+```
 Key flags (see `python -m src.train --help` for the full list):
 
 - `--num-buckets`: size of the hashing feature space. Larger = fewer
