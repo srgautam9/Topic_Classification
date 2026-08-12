@@ -56,14 +56,12 @@ in `src/train.py` uses `torch.cuda.is_available()`, which resolves correctly
 for ROCm-built PyTorch as well (ROCm exposes itself through the same `cuda`
 device namespace).
 
-### Sanity-check the pipeline before the real run
+### Download data and save in data/ folder
 
-The real dataset is 4GB / 10M rows; before pointing everything at it, verify
-the whole pipeline works end-to-end on a tiny synthetic file:
-
-```bash
-python scripts/make_synthetic_data.py --n-rows 20000 --out synthetic_dataset.parquet
-python -m src.train --approach fasttext --data synthetic_dataset.parquet --epochs 1
+Download the data by running this command:
+```
+pip install gdown
+python src/download_data.py --file_id 1iib_mYxLcN6pNVHMpANeUCpe2qum0n-K --out data/dataset_10.parquet
 ```
 
 ## b. Training Instructions
