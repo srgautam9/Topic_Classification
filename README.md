@@ -14,7 +14,6 @@ project/
 │   ├── data.py         # streaming IterableDatasets for the DL models
 │   └── utils.py        # streaming I/O, text cleaning, feature hashing, metrics
 ├── scripts/
-│   ├── make_synthetic_data.py   # generates a tiny synthetic parquet for smoke-testing
 │   └── compare_models.py        # combines multiple metrics.json into one comparison table
 ├── experiments/
 │   └── notes.md         # working experiment log (configs/observations)
