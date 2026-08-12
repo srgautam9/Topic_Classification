@@ -57,7 +57,7 @@ in `src/train.py` uses `torch.cuda.is_available()`, which resolves correctly
 for ROCm-built PyTorch as well (ROCm exposes itself through the same `cuda`
 device namespace).
 
-### Download data and save in \code{data/} folder
+### Download data and save in "data/" folder
 
 Download the data by running this command:
 ```
