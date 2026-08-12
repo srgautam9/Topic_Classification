@@ -45,8 +45,10 @@ in the final report.
 ## a. Setup Instructions
 
 ```bash
-python -m venv venv
-source venv/bin/activate        # Windows: venv\Scripts\activate
+conda create -n topic python=3.12.12
+conda activate topic
+git clone https://github.com/srgautam9/Topic_Classification.git
+cd Topic_Classification
 pip install -r requirements.txt
 ```
 
@@ -55,7 +57,7 @@ in `src/train.py` uses `torch.cuda.is_available()`, which resolves correctly
 for ROCm-built PyTorch as well (ROCm exposes itself through the same `cuda`
 device namespace).
 
-### Download data and save in data/ folder
+### Download data and save in \code{data/} folder
 
 Download the data by running this command:
 ```
