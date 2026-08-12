@@ -75,10 +75,10 @@ python -m src.train --approach tfidf_lr --data data/dataset_10.parquet --label-c
 python -m src.train --approach fasttext --data data/dataset_10.parquet --label-cache experiments/label2id.json
 
 # TextCNN
-python -m src.train --approach cnn --data /path/to/dataset_10.parquet --epochs 3 --batch-size 256 --num-buckets 2000000 --embed-dim 128 --max-len 128
+python -m src.train --approach cnn --data data/dataset_10.parquet --epochs 3 --batch-size 256 --num-buckets 2000000 --embed-dim 128 --max-len 128
 
 # BiLSTM
-python -m src.train --approach bilstm --data /path/to/dataset_10.parquet --epochs 3 --batch-size 256 --num-buckets 2000000 --embed-dim 128 --hidden-dim 128
+python -m src.train --approach bilstm --data data/dataset_10.parquet --epochs 3 --batch-size 256 --num-buckets 2000000 --embed-dim 128 --hidden-dim 128
 
 ```
 Key flags (see `python -m src.train --help` for the full list):
@@ -130,16 +130,16 @@ artifacts for one model at a time:
 
 ```bash
 python -m src.evaluate --approach fasttext --model final_models/fasttext_final.pt \
-    --data /path/to/dataset_10.parquet --out-dir eval_results/fasttext
+    --data data/dataset_10.parquet --out-dir eval_results/fasttext
 
 python -m src.evaluate --approach tfidf_lr --model final_models/tfidf_lr.joblib \
-    --data /path/to/dataset_10.parquet --out-dir eval_results/tfidf_lr
+    --data data/dataset_10.parquet --out-dir eval_results/tfidf_lr
 
 python -m src.evaluate --approach cnn --model final_models/cnn_final.pt \
-    --data /path/to/dataset_10.parquet --out-dir eval_results/cnn
+    --data data/dataset_10.parquet --out-dir eval_results/cnn
 
 python -m src.evaluate --approach bilstm --model final_models/bilstm_final.pt \
-    --data /path/to/dataset_10.parquet --out-dir eval_results/bilstm
+    --data data/dataset_10.parquet --out-dir eval_results/bilstm
 ```
 
 Each run writes to `--out-dir`:
